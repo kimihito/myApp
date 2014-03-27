@@ -12,24 +12,25 @@
         <p>from {{pet.provider}}</p>
       </div>
 
+
       <div class='item item-image'>
         <img src="{{pet.thumbnail}}">
       </div>
-    <a class="item item-icon-left assertive" href="#">
-      <i class="icon ion-ios7-play"></i>
-      Play This Video
-    </a>
 
-    <a class="item item-icon-left calm" href="#">
-      <i class="icon ion-social-twitter"></i>
-      Share on Twitter
-    </a>
-
-    <a class="item item-icon-left positive" href="#">
-      <i class="icon ion-social-facebook"></i>
-      Share on Facebook
-    </a>
-  </div>
-  <!-- <p><a class="button button-small icon ion-arrow-left-b" href="#/tab/pets"> All Pets</a></p> -->
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#" ng-click="play(pet.url)">
+          <i class="icon ion-ios7-play"></i>
+          Play
+        </a>
+        <a class="tab-item calm" href="#">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item positive" href="#">
+          <i class="icon ion-social-facebook"></i>
+          Share
+        </a>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
