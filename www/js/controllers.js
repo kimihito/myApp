@@ -107,7 +107,6 @@ angular.module('starter.controllers', [])
     $scope.pets = [];
     angular.forEach(d, function(value, key){
       if(value.provider == 'niconico'){
-        console.log(value);
         $scope.pets.push(value);
       }
     });
