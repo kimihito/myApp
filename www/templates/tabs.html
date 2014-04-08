@@ -1,28 +1,33 @@
-
-<!-- 
-  Create tabs with an icon and label, using the tabs-positive style. 
-  Each tab's child <ion-nav-view> directive will have its own 
+<!--
+  Create tabs with an icon and label, using the tabs-positive style.
+  Each tab's child <ion-nav-view> directive will have its own
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs tabs-style="tabs-icon-top" tabs-type="tabs-default">
 
 
   <!-- Pets Tab -->
-  <ion-tab title="Pets" icon="icon ion-home" href="#/tab/pets">
+  <ion-tab title="Home" icon="icon ion-home" href="#/tab/pets">
     <ion-nav-view name="pets-tab"></ion-nav-view>
   </ion-tab>
 
 
-  <!-- Adopt Tab -->
-  <ion-tab title="Adopt" icon="icon ion-heart" href="#/tab/adopt">
-    <ion-nav-view name="adopt-tab"></ion-nav-view>
+
+  <!-- Provider Tab -->
+  <ion-tab title="Youtube" icon="icon ion-social-youtube" href="#/tab/youtube">
+    <ion-nav-view name="youtube-tab"></ion-nav-view>
   </ion-tab>
 
-
-  <!-- About Tab -->
-  <ion-tab title="About" icon="icon ion-search" href="#/tab/about">
-    <ion-nav-view name="about-tab"></ion-nav-view>
+  <ion-tab title="Niconico" icon="icon ion-ios7-videocam" href="#/tab/niconico">
+    <ion-nav-view name="niconico-tab"></ion-nav-view>
   </ion-tab>
 
+  <ion-tab title="Vimeo" icon="icon ion-social-vimeo" href="#/tab/vimeo">
+    <ion-nav-view name="vimeo-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="FC2" icon="icon ion-search" href="#/tab/fc2">
+    <ion-nav-view name="fc2-tab"></ion-nav-view>
+  </ion-tab>
 
 </ion-tabs>
