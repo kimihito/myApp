@@ -60,6 +60,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('VideoProviderCtrl', function($scope, $stateParams, VideoService){
+  console.log($stateParams);
   VideoService.all().then(function(d){
     $scope.pets = [];
     angular.forEach(d, function(value, key){
@@ -100,8 +101,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('VideoNiconicoCtrl', function($scope, $stateParams, VideoService){
-  console.log('NiconicoCtrl');
-
   $scope.navTitle = 'Niconico';
   VideoService.all().then(function(d){
     $scope.pets = [];

@@ -44,58 +44,89 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       }
     })
 
-    .state('tab.adopt', {
-      url: '/adopt',
-      views: {
-        'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
-        }
-      }
-    })
-
     .state('tab.youtube',{
-      url: '/provider/youtube',
+      url: '/youtube',
       views: {
         'youtube-tab': {
-          templateUrl: 'templates/provider.html',
+          templateUrl: 'templates/youtube.html',
           controller: 'VideoYoutubeCtrl'
 
         }
       }
     })
 
+    .state('tab.youtube-detail', {
+      url: '/youtube/:petId',
+      views: {
+        'youtube-tab': {
+          templateUrl: 'templates/youtube-detail.html',
+          controller: 'VideoDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.vimeo',{
-      url: '/provider/vimeo',
+      url: '/vimeo',
       views: {
         'vimeo-tab': {
-          templateUrl: 'templates/provider.html',
+          templateUrl: 'templates/vimeo.html',
           controller: 'VideoVimeoCtrl'
 
         }
       }
     })
 
+    .state('tab.vimeo-detail', {
+      url: '/vimeo/:petId',
+      views: {
+        'vimeo-tab': {
+          templateUrl: 'templates/vimeo-detail.html',
+          controller: 'VideoDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.fc2',{
-      url: '/provider/fc2',
+      url: '/fc2',
       views: {
         'fc2-tab': {
-          templateUrl: 'templates/provider.html',
+          templateUrl: 'templates/fc2.html',
           controller: 'VideoFC2Ctrl'
 
         }
       }
     })
 
+    .state('tab.fc2-detail',{
+      url: '/fc2/:petId',
+      views: {
+        'fc2-tab': {
+          templateUrl: 'templates/fc2.html',
+          controller: 'VideoDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.niconico',{
-      url: '/provider/niconico',
+      url: '/niconico',
       views: {
         'niconico-tab': {
-          templateUrl: 'templates/provider.html',
+          templateUrl: 'templates/niconico.html',
           controller: 'VideoNiconicoCtrl'
 
         }
       }
     })
+
+    .state('tab.nicnico-detail',{
+      url: '/niconico/:petId',
+      views: {
+        'niconico-tab':{
+          templateUrl: 'templates/niconico-detail.html'
+        }
+      }
+    });
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/pets');
 
