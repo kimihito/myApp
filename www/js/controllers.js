@@ -59,21 +59,8 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('VideoProviderCtrl', function($scope, $stateParams, VideoService){
-  console.log($stateParams);
-  VideoService.all().then(function(d){
-    $scope.pets = [];
-    angular.forEach(d, function(value, key){
-      if($stateParams.provider == value.provider){
-        $scope.pets.push(value);
-      }
-    });
-
-  });
-})
-
 .controller('VideoYoutubeCtrl', function($scope, $stateParams, VideoService){
-  $scope.navTitle = 'Youtube'
+  $scope.navTitle = 'Youtube';
 
   VideoService.all().then(function(d){
     $scope.pets = [];
