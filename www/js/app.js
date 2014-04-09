@@ -122,7 +122,8 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       url: '/niconico/:petId',
       views: {
         'niconico-tab':{
-          templateUrl: 'templates/niconico-detail.html'
+          templateUrl: 'templates/niconico-detail.html',
+          controller: 'VideoDetailCtrl'
         }
       }
     });
