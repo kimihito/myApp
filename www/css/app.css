@@ -6,3 +6,23 @@
   width: 96px;
   height: 96px;
 }
+
+.play-button {
+	position: absolute;
+	z-index: 9;
+	left: 0%;
+	top: 30%;
+	width: 100%;
+}
+
+.icon.ion-ios7-play {
+	font-size: 90px;
+}
+
+.item.item-image {
+	position: relative;
+}
+
+.item.item-image > img {
+	opacity: 0.6;
+}
