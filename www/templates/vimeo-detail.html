@@ -21,13 +21,12 @@
 
       <div class='item item-image'>
         <img src="{{pet.thumbnail}}">
+        <a ng-click="play(pet.url)" class='play-button'>
+          <i class="icon ion-ios7-play"></i>
+        </a>
       </div>
 
       <div class="item tabs tabs-secondary tabs-icon-left">
-        <a class="tab-item" ng-click="play(pet.url)">
-          <i class="icon ion-ios7-play"></i>
-          Play
-        </a>
         <a class="tab-item calm"  ng-click="shareTwitter(pet)">
           <i class="icon ion-social-twitter"></i>
           Tweet
